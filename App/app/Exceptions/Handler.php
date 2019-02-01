@@ -34,6 +34,22 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+        $code = $exception->getCode();
+        $message = $exception->getMessage();
+        $trace = $exception->getTrace();
+
+         if(count($trace) == 0){
+            parent::report($exception);
+            return;
+        }
+
+        if(!array_key_exists('line', $trace[0]) || !array_key_exists('file', $trace[0])){
+            parent::report($exception);
+            return;
+        }
+
+        Log::error('['.$exception->getCode().'] "'.$exception->getMessage().'" on line '.$exception->getTrace()[0]['line'].' of file '.$exception->getTrace()[0]['file']);
+
         parent::report($exception);
     }
 

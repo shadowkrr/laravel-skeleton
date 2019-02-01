@@ -1,0 +1,858 @@
+body {
+  color: #333333;
+  background: #f2f2f2;
+  padding-top: 82px;
+}
+img {
+  max-width: 100%;
+}
+
+.container-fluid {
+  width: 1630px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.icon-default,
+.color-default {
+  color: #b3b3b3;
+}
+.icon-gray,
+.icon-secondary,
+.color-gray,
+.color-secondary {
+  color: #808080;
+}
+.icon-primary,
+.color-primary {
+  color: #29abe2;
+}
+.icon-success,
+.color-success {
+  color: #59bea0;
+}
+.icon-warning,
+.color-warning {
+  color: #edc343;
+}
+.icon-danger,
+.color-danger {
+  color: #f02475;
+}
+.icon-dark,
+.color-dark {
+  color: #2f2a2b;
+}
+.bg-default {
+  background-color: #f2f2f2 !important;
+}
+.bg-info {
+  background-color: #7ac1e8 !important;
+}
+.bg-primary {
+  background-color: #29abe2 !important;
+}
+.bg-success {
+  background-color: #59bea0 !important;
+}
+.bg-warning {
+  background-color: #edc343 !important;
+}
+.bg-danger {
+  background-color: #f02475 !important;
+}
+.bg-white {
+  background-color: #ffffff !important;
+}
+.bg-dark {
+  background-color: #2f2a2b !important;
+}
+.btn-default {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+.btn-secondary {
+  background-color: #808080;
+  border-color: #808080;
+}
+.btn-primary {
+  background-color: #29abe2;
+  border-color: #29abe2;
+}
+.btn-success {
+  background-color: #59bea0;
+  border-color: #59bea0;
+}
+.btn-warning {
+  background-color: #edc343;
+  border-color: #edc343;
+}
+.btn-danger {
+  background-color: #f02475;
+  border-color: #f02475;
+}
+.btn-dark {
+  background-color: #2f2a2b;
+  border-color: #2f2a2b;
+}
+.btn-light {
+  background-color: #ffffff;
+  border-color: #333333;
+  color: #333333;
+}
+
+/* ▼▼▼ ヘッダナビ関係 ▼▼▼ */
+.navbar {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  position: relative;
+}
+.navbar-border::after,
+.modal-dialog .modal-content::before {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+
+  background: #479ea5; /* Old browsers */
+  background: -moz-linear-gradient(left, #479ea5 0%, #b6cba4 50%, #e6db9a 66%, #d28b5f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #479ea5 0%,#b6cba4 50%,#e6db9a 66%,#d28b5f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #479ea5 0%,#b6cba4 50%,#e6db9a 66%,#d28b5f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#479ea5', endColorstr='#d28b5f',GradientType=1 ); /* IE6-9 */
+}
+.modal-dialog.modal-sm .modal-content::before {
+  content: none;
+}
+header a.color-dark {
+  color: #2f2a2b;
+}
+.navbar-expand>.container,
+.navbar-expand>.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;}
+
+.dropdown-menu.user-menu {
+  left: auto;
+  right: 0;}
+.dropdown-item {
+  padding: .5rem 2.5rem .5rem 1.5rem;}
+.nav-link i,
+.dropdown-item i {
+  margin-right: .5em;}
+  .dropdown-item i.fa-clipboard-list{
+    padding-left: 2px;
+    padding-right: 2px;}
+  .dropdown-item i.deg-90 {
+    transform: rotate(90deg);}
+
+/* caret */
+.dropdown-toggle::after {
+  width: 13px;
+  height: 13px;
+  margin-left: 1.5em;
+  border: solid;
+  border-color: initial;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);}
+
+/* 絞り込みドロップダウン */
+.navbar .refine-dropdown{
+  position: absolute;
+  color: #fff;
+  top: 2.2rem;
+  margin-left: -15px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;}
+  .navbar .refine-dropdown a {
+    color: #fff;}
+    .navbar .refine-dropdown a.nav-link {
+      width: 172px;
+      padding-left: 1.5rem;}
+      .navbar .refine-dropdown a.nav-link i {
+        float: right;
+        padding-top: .25rem;}
+  .navbar .refine-dropdown .dropdown-toggle::after {
+    content: none;}
+  .navbar .refine-dropdown .dropdown-menu {
+    width: 512px;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    margin-top: 7px;}
+    .navbar .refine-dropdown .dropdown-menu .dropdown-item {
+      font-size: .9rem;
+      padding: .25rem 0;
+      background-color: inherit;}
+      .navbar .refine-dropdown .dropdown-menu .dropdown-item:hover {
+        text-decoration: underline;}
+  .navbar .refine-dropdown .form-control {
+    font-size: .8rem;}
+
+/* 絞り込みキャレットの切り替え */
+.navbar .refine-dropdown .dropdown .fa-caret-down{
+  display: block;}
+  .navbar .refine-dropdown .dropdown.show .fa-caret-down{
+    display: none;}
+.navbar .refine-dropdown .dropdown .fa-times{
+  display: none;}
+  .navbar .refine-dropdown .dropdown.show .fa-times{
+    display: block;}
+
+/* 絞り込みドロップダウン背景色 */
+.navbar .refine-dropdown.bg-dark{
+  background-color: #2f2a2b;}
+  .navbar .refine-dropdown.bg-dark .dropdown.show{
+    border-bottom: 8px solid #2f2a2b;}
+    .navbar .refine-dropdown.bg-dark .dropdown .dropdown-menu {
+      background-color: #2f2a2b;}
+      .navbar .refine-dropdown.bg-dark .dropdown .dropdown-menu .btn {
+        color: #2f2a2b;
+        background-color: #fff;}
+      .navbar .refine-dropdown.bg-dark .dropdown .dropdown-menu input[type=radio] + .radio-parts::before {
+        border: 0;}
+      .navbar .refine-dropdown.bg-dark .dropdown .dropdown-menu input[type=radio] + .radio-parts::after {
+        background-color: #2f2a2b;}
+.navbar .refine-dropdown.bg-warning{
+  background-color: #edc343;}
+  .navbar .refine-dropdown.bg-warning .dropdown.show{
+    border-bottom: 7px solid #edc343;}
+    .navbar .refine-dropdown.bg-warning .dropdown .dropdown-menu {
+      background-color: #edc343;}
+      .navbar .refine-dropdown.bg-warning .dropdown .dropdown-menu .btn {
+        color: #edc343;
+        background-color: #fff;}
+      .navbar .refine-dropdown.bg-warning .dropdown .dropdown-menu input[type=radio] + .radio-parts::before {
+        border: 0;}
+      .navbar .refine-dropdown.bg-warning .dropdown .dropdown-menu input[type=radio] + .radio-parts::after {
+        background-color: #edc343;}
+.navbar .refine-dropdown.bg-success{
+  background-color: #59bea0;}
+  .navbar .refine-dropdown.bg-success .dropdown.show{
+    border-bottom: 7px solid #59bea0;}
+    .navbar .refine-dropdown.bg-success .dropdown .dropdown-menu {
+      background-color: #59bea0;}
+      .navbar .refine-dropdown.bg-success .dropdown .dropdown-menu .btn {
+        color: #59bea0;
+        background-color: #fff;}
+      .navbar .refine-dropdown.bg-success .dropdown .dropdown-menu input[type=radio] + .radio-parts::before {
+        border: 0;}
+      .navbar .refine-dropdown.bg-success .dropdown .dropdown-menu input[type=radio] + .radio-parts::after {
+        background-color: #59bea0;}
+/* ▲▲▲ ヘッダナビ関係 ▲▲▲ */
+
+/* ▼▼▼ ページャー関係 ▼▼▼ */
+.paging label {
+  font-size: 1.25em;
+  font-weight: lighter;
+  position: absolute;}
+  .paging label span {
+    font-size: .5em;}
+  .paging nav .pagination {
+    margin-bottom: 0;}
+
+.page-item.forward .page-link.disabled,
+.page-item.next .page-link.disabled {
+  visibility: hidden;}
+.page-item.at-first .page-link,
+.page-item.to-last .page-link {
+  border: 2px solid #808080;}
+.page-item.active .page-link {
+  border: 2px solid transparent;
+  background-color: #29abe2;}
+  .page-item.active span.page-link{
+    cursor: default;}
+.page-link {
+  font-weight: bold;
+  font-size: .75rem;
+  padding: .25rem .5rem;
+  margin-left: 3px;
+  color: #808080;
+  background: transparent;
+  border: 2px solid transparent;}
+  .page-link:hover {
+    color: #808080;
+    border: 2px solid transparent;
+    background: transparent}
+/* ▲▲▲ ページャー関係 ▲▲▲ */
+
+/* ▼▼▼ メインリストのテーブル関係 ▼▼▼ */
+#clone-table tbody td {
+  border: 0;}
+
+/* テーブルセパレート設定 */
+table.table.list-table tr > th.table-separate,
+table.table.list-table tr > td.table-separate {
+  padding: .75rem 0;
+  border: 0;
+  width: 6px;
+  background-color: #f2f2f2;}
+  table.table.list-table tr > th.table-separate .connection,
+  table.table.list-table tr > td.table-separate .connection {
+    height: 100%;}
+    table.table.list-table tr > th.table-separate .connection.connection-dark-green,
+    table.table.list-table tr > td.table-separate .connection.connection-dark-green{
+      background-color: #60a8a6;}
+    table.table.list-table tr > th.table-separate .connection.connection-yellow-green,
+    table.table.list-table tr > td.table-separate .connection.connection-yellow-green{
+      background-color: #c1dba9;}
+    table.table.list-table tr > th.table-separate .connection.connection-yellow,
+    table.table.list-table tr > td.table-separate .connection.connection-yellow{
+      background-color: #e6db9a;}
+    table.table.list-table tr > th.table-separate .connection.connection-orange,
+    table.table.list-table tr > td.table-separate .connection.connection-orange{
+      background-color: #dbaf78;}
+    table.table.list-table tr > th.table-separate .connection.connection-gray,
+    table.table.list-table tr > td.table-separate .connection.connection-gray{
+      background-color: #cccccc;}
+    /* 管理画面一覧の場合はpaddingを大きめに */
+  table.table.list-table.main-list-table-admin tr > th.table-separate,
+  table.table.list-table.main-list-table-admin tr > td.table-separate {
+    padding: 1.5rem 0;}
+/* テーブルオフセット設定 */
+table.table.list-table tbody tr > th.offset,
+table.table.list-table tbody tr > td.offset,
+table.table.list-table tbody tr > th.offset:first-child
+table.table.list-table tbody tr > td.offset:first-child
+table.table.list-table tbody tr > th.offset:last-child,
+table.table.list-table tbody tr > td.offset:last-child {
+  padding: 0;
+  border: 0 !important;
+  background-color: transparent;}
+
+/* テーブル基本設定 */
+table.table.list-table {
+  border-collapse: separate;
+  border-spacing: 0 .7rem;
+  table-layout: fixed;
+  word-break: break-all;
+  height: 100%;}
+  table.table.list-table tbody > tr > td {
+    color: #808080;
+    font-weight: lighter;
+    line-height: 1.1;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-left: 0;
+    border-right: 0;
+    height: 100%;}
+    table.table.list-table tbody > tr > td:first-child,
+    table.table.list-table tbody > tr > td.cluster-first {
+      border-left: 1px solid #dee2e6;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;}
+    table.table.list-table tbody > tr > td:last-child,
+    table.table.list-table tbody > tr > td.cluster-last {
+      border-right: 1px solid #dee2e6;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;}
+    table.table.list-table tbody > tr > td a {
+      color: #808080;
+      text-decoration: none;}
+
+  table.table.list-table thead td,
+  table.table.list-table thead th {
+    color: #808080;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding: 10px 0 0;
+    border-top: none;
+    font-size: .5rem;
+    vertical-align: bottom;
+    text-align: center;}
+    table.table.list-table thead > tr > td.cluster-first div {
+      border-top-left-radius: 6px;}
+    table.table.list-table thead > tr > td.cluster-last div {
+      border-top-right-radius: 6px;}
+    table.table.list-table thead > tr > td:first-child {
+      border-left: none;}
+    /* テーブルヘッダー下辺の色付き線設定 */
+    table.table.list-table thead > tr > td.bottom-gray {
+      border-bottom: 2px solid #cccccc;}
+    table.table.list-table thead > tr > td.bottom-dark-green {
+      border-bottom: 2px solid #abc6c5;}
+    table.table.list-table thead > tr > td.bottom-yellow-green {
+      border-bottom: 2px solid #cad5c7;}
+    table.table.list-table thead > tr > td.bottom-yellow {
+      border-bottom: 2px solid #e6e0c0;}
+    table.table.list-table thead > tr > td.bottom-orange {
+      border-bottom: 2px solid #e0caaf;}
+      table.table.list-table thead td > div,
+      table.table.list-table thead th > div {
+        position: relative;
+        background-color: #e6e6e6;
+        height: 6em;}
+        table.table.list-table thead td > div > span.title,
+        table.table.list-table thead th > div > span.title {
+          position: absolute;
+          bottom: .5em;
+          width: 100%;
+          left: 0;}
+        table.table.list-table thead td > div > span.sortable,
+        table.table.list-table thead th > div > span.sortable {
+          position: absolute;
+          z-index: 5;
+          top: .5em;
+          left: .5em;}
+          table.table.list-table thead td > div > span.sortable .active,
+          table.table.list-table thead th > div > span.sortable .active {
+            opacity: 1;
+            color: #f7931e;}
+        table.table.list-table thead td > div > .head-border,
+        table.table.list-table thead th > div > .head-border {
+          position: absolute;
+          bottom: 0;
+          border-left: 1px solid #f2f2f2;
+          height: 5em;}
+
+  /* テーブルの表の中身の設定 */
+  table.table.list-table > tbody .icon,
+  table.table.list-table > tbody .datetime,
+  table.table.list-table > tbody .check {
+    border-left: 1px solid #dee2e6;
+    text-align: center;
+    margin: 0 -.75rem;
+    min-height: 40px;}
+    table.table.list-table > tbody .cluster-first .icon,
+    table.table.list-table > tbody .cluster-first .datetime,
+    table.table.list-table > tbody .cluster-first .check {
+      border-left: 0;}
+  table.table.list-table > tbody .icon i {
+    line-height: 1.75;
+    font-size: 1.5rem;}
+    table.table.list-table > tbody .comment-col .icon  {
+      margin-top: .5rem;}
+  table.table.list-table > tbody .last-day {
+    font-size: .85rem;
+    margin: 0 -.75rem;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    top: .25rem;}
+  table.table.list-table > tbody .datetime,
+  table.table.list-table > tbody .check {
+    font-size: .8rem;
+    padding-top: .3rem;}
+    .table.table.list-table.list-table-target > tbody .datetime{
+      padding-top: 0;}
+  table.table.list-table > tbody .datetime-col .datetime {
+    padding-top: .8rem;}
+    table.table.list-table > tbody .datetime-col:first-child .datetime {
+      border-left: 0;}
+  
+  /* テーブルの中のバツ以外のアイコンの色を薄くする */
+  table.table.list-table .icon-success,
+  table.table.list-table .icon-default {
+    opacity: .5;}
+
+  /* 抽出ページのテーブルの設定 */
+  table.list-table-target tbody tr > th > div,
+  table.list-table-target tbody tr > td > div {
+    font-size: .8rem;
+    border-left: 1px solid #dee2e6;
+    padding: 0 .75rem;
+    margin: 0 -.75rem;
+    height: 100%;
+    letter-spacing: 1.6px;
+    line-height: 1.75;
+    text-align: justify;}
+    table.list-table-target tbody tr > th > .datetime,
+    table.list-table-target tbody tr > td > .datetime {
+      padding-top: 0;}
+    table.list-table-target tbody tr > th:first-child > div,
+    table.list-table-target tbody tr > td:first-child > div {
+      border-left: 0;}
+    table.list-table-target tbody tr > th.image > div,
+    table.list-table-target tbody tr > td.image > div {
+      text-align: center;}
+
+  /* 各ページのテーブルのレイアウト設定 */
+  table.main-list-table tr > th,
+  table.main-list-table tr > td {
+    width: 5.454545454%;}
+    table.main-list-table tr > th.url,
+    table.main-list-table tr > td.url {
+      width: 27.27272727%;}
+    table.main-list-table tr > th.flag-col,
+    table.main-list-table tr > td.flag-col {
+      width: 4.454545454%;}
+    table.main-list-table tr > th.comment-col,
+    table.main-list-table tr > td.comment-col {
+      width: 3.818181817%;}
+    table.main-list-table tr > th.offset,
+    table.main-list-table tr > td.offset {
+      width: 8.181818181%;}
+    table.main-list-table.main-list-table-admin tr > th.url,
+    table.main-list-table.main-list-table-admin tr > td.url {
+      width: 16.363636362%;}
+
+  table.list-table-site-detail tr > th,
+  table.list-table-site-detail tr > td {
+    width:   5.6603773584%;}
+    table.list-table-site-detail > thead > tr > th.datetime-col.first-col,
+    table.list-table-site-detail > thead > tr > td.datetime-col.first-col {
+      width: 11.3207547169%;}
+    table.list-table-site-detail > thead > tr > th.datetime-col,
+    table.list-table-site-detail > thead > tr > td.datetime-col {
+      width: 11.3207547169%;}
+    table.list-table-site-detail > thead > tr > th.comment-col,
+    table.list-table-site-detail > thead > tr > td.comment-col {
+      width: 3.77358490566%;}
+      table.list-table-site-detail > thead > tr > th.offset,
+    table.list-table-site-detail > thead > tr > td.offset {
+      width: 16.9811320752%;}
+  table.list-table-target tr > th,
+  table.list-table-target tr > td {
+    width: 33.333333%;}
+    table.list-table-target > thead > tr > th.result-col,
+    table.list-table-target > thead > tr > td.result-col {
+      width: 22.222222%;}
+    table.list-table-target > thead > tr > th.datetime-col,
+    table.list-table-target > thead > tr > td.datetime-col {
+      width: 11.111111%;}
+/* ▲▲▲ メインリストのテーブル関係 ▲▲▲ */
+
+/* ▼▼▼ パネル関係 ▼▼▼ */
+.card {
+  width: 100%;
+  box-shadow: 0 2px 30px -2px #b3b3b3;}
+  .card a {
+    color: #b3b3b3;}
+  .card .card-header {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    letter-spacing: .25rem;
+    border-bottom: 0;}
+    .card .card-header h5 {
+      margin-bottom: .25rem;
+      line-height: 1;}
+    .card .card-header h6 {
+      margin-bottom: 0;
+      line-height: 1;
+      letter-spacing: 0;
+      font-weight: normal;}
+    .card .card-header .back-link {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.25rem;
+      letter-spacing: 0.125rem;}
+    .card .card-header .show-user-info {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.25rem;
+      letter-spacing: 0.125rem;}
+      .card .card-header .show-user-info i {
+        margin: 0 .25rem;}
+  .card .card-body {
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,.125);}
+    .card .card-body .form-group {
+      margin-top: -.75rem;
+      margin-bottom: 1.75rem;}
+      .card .card-body .form-group label {
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: .8px;
+        margin-bottom: 5px;}
+      .card .card-body .form-group .form-control-plaintext {
+        line-height: 1;
+        padding: 3px 5px;
+        margin-bottom: 0;
+        border-radius: 6px;
+        color: #333333;
+        background-color: #e6e6e6;}
+        .card .card-body .form-group .form-control-plaintext button {
+          padding: .25rem;;
+          border: 0;
+          background-color: transparent;
+          margin: -.25rem 0 -.25rem .25rem;
+          color: #b3b3b3;}
+    .card .card-body .mail-address:last-child {
+      margin-bottom: -1.25rem;}
+    .card .card-body .mail-address .form-group label {
+      display: inline;
+      margin-right: .5rem;}
+    .card .card-body .mail-address .form-group .form-control-plaintext {
+      width: auto;
+      display: inline-block;}
+    .card .card-body > .row .check-group {
+      position: relative;
+      font-size: .8rem;}
+      .card .card-body > .row .check-group .check-wrap {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;}
+        .card .card-body > .row .check-group .check-wrap .checkbox-inline .checkbox-label {
+          margin-right: .5rem;}
+  .card.card-check-result .card-body.result-body{
+    padding: 0;}
+  .card.card-check-result .card-body.result-body:last-child{
+    border-bottom: 1px solid rgba(0,0,0,.125);}
+    .card.card-check-result .card-body.result-body .check-title {
+      padding: 1.25rem;
+      padding-right: 0;
+      padding-left: calc(1.25rem + 15px);}
+    .card.card-check-result .card-body.result-body .check-result {
+      color: #333333;}
+      .card.card-check-result .card-body.result-body .check-result > div {
+        padding: 1.25rem 0;}
+        .card.card-check-result .card-body.result-body .check-result > div i {
+          padding: 0 1.25rem;}
+          .card.card-check-result .card-body.result-body .check-result > div i.fa-times {
+            font-size: 22px;
+            margin: 0 1px;}
+          .card.card-check-result .card-body.result-body .check-result > div i.fa-circle {
+            font-size: 18px;}
+      .card.card-check-result .card-body.result-body .check-result > div:not(:last-child) {
+        border-bottom: 1px solid rgba(0,0,0,.125);}
+/* ▲▲▲ パネル関係 ▲▲▲ */
+
+/* ▼▼▼ フォーム関係 ▼▼▼ */
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio], .radio-inline input[type=radio]{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+label.checkbox,
+label.radio {
+  cursor: pointer;
+  display: block;
+  margin-bottom: .25rem;}
+  .checkbox .checkbox-parts,
+  .radio .radio-parts{
+    cursor: pointer;
+    display: inline-block;}
+
+.checkbox-inline,
+.radio-inline {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 0;}
+  .checkbox-inline .checkbox-label,
+  .radio-inline .radio-label {
+    display: inline-block;}
+  .checkbox-inline .checkbox-parts,
+  .radio-inline .radio-parts{
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 20px;
+    position:relative;
+    margin-right: 20px;}
+
+input[type=radio]:disabled + label,
+input[type=checkbox]:disabled + .checkbox-parts{
+  cursor: not-allowed;}
+  input[type=radio]:disabled + label::before,
+  input[type=checkbox]:disabled + .checkbox-parts::before{
+    background-color: #eee;
+    cursor: not-allowed;}
+
+input[type=radio] + .radio-parts{
+  padding-left: 24px;
+  position:relative;
+  margin-right: 20px;
+  font-weight: normal;}
+  .radio input[type=radio] + .radio-parts{
+    padding-left: 36px;}
+  input[type=radio] + .radio-parts::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b3b3b3;
+    background-color: #fff;
+    border-radius: 50%;}
+  input[type=radio]:checked + .radio-parts::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: #f02475;
+    border-radius: 50%;}
+
+input[type=checkbox] + .checkbox-parts{
+  padding-left: 24px;
+  position:relative;
+  margin-right: 0;
+  display: inline-block;
+  font-weight: normal;}
+  input[type=checkbox] + .checkbox-parts::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #b3b3b3;}
+  input[type=checkbox]:checked + .checkbox-parts::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 9px;
+    height: 12px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid #f02475;
+    border-right: 3px solid #f02475;}
+
+/* チェックボックスの位置調整 */
+.checkbox-label + input[type=checkbox] + .checkbox-parts::before {
+  top: -10px;
+  left: 3px;}
+.checkbox-label + input[type=checkbox]:checked + .checkbox-parts::after {
+  top: -9px;
+  left: 7px;}
+/* インライン時 */
+.checkbox-inline .checkbox-label + input[type=checkbox] + .checkbox-parts::before {
+  top: -14px;}
+.checkbox-inline .checkbox-label + input[type=checkbox]:checked + .checkbox-parts::after {
+  top: -13px;}
+
+label.file-import {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: .5em 5rem;}
+  label.file-import input[type="file"]{
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-size: 100px;
+    cursor: pointer;}
+/* ▲▲▲ フォーム関係 ▲▲▲ */
+
+/* ▼▼▼ ログインフォーム関係 ▼▼▼ */
+.login-form {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;}
+  .login-form .input-group .input-group-text {
+    font-size: 1.25rem;
+    border-width: 2px;
+    border-right: 0;
+    border-color: #23272b;
+    background-color: #ffffff;}
+  .login-form .input-group .form-control {
+    padding: .75em;
+    padding-left: 0;
+    border-width: 2px;
+    border-left: 0;
+    border-color: #23272b;}
+  .login-form .btn {
+    padding: 13px;}
+/* ▲▲▲ ログインフォーム関係 ▲▲▲ */
+
+/* ▼▼▼ モーダル関係 ▼▼▼ */
+.modal-dialog {
+  max-width: 640px;}
+  .modal-dialog.modal-sm {
+    max-width: 400px;}
+    .modal-dialog.modal-sm .modal-content {
+      border-radius: 6px;}
+  .modal-dialog .modal-content {
+    border-radius: 6px;
+    border-top-left-radius: 12px 6px;
+    border-top-right-radius: 12px 6px;
+    overflow: hidden;}
+  .modal-dialog .modal-content .modal-header {
+    margin: 0 2rem;
+    color: #808080;}
+    .modal-dialog .modal-content .modal-header .modal-title{
+      width: 100%;
+      text-align: center;}
+      .modal-dialog .modal-content .modal-header .modal-sub-title{
+        margin-top: .5rem;
+        margin-bottom: -0.5rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: .9rem;
+        letter-spacing: .3px;
+        text-align: center;
+        word-break: break-all;
+        color: #333333;}
+    .modal-dialog .modal-content .modal-header .close {
+      position: absolute;
+      right: 3rem;
+      font-size: 2rem;}
+    .modal-dialog .modal-content .modal-header .close:hover{
+      color: #808080;
+      opacity: 1;}
+  .modal-dialog .modal-content .modal-body {
+    margin: 0 2rem;}
+  .modal-dialog .modal-content .modal-body .form-group .message-head {
+    margin: 0 0 .5rem;}
+    .modal-dialog .modal-content .modal-body .form-group .message-head .edit-tool {
+      float: right;}
+      .modal-dialog .modal-content .modal-body .form-group .message-head .edit-tool a {
+        color: #808080;}
+        .modal-dialog .modal-content .modal-body .form-group .message-head .edit-tool a:hover {
+          color: #666666;
+          text-decoration: none;}
+  .modal-dialog .modal-content .modal-body .form-group .message-foot {
+    margin: .5rem 0;}
+    .modal-dialog .modal-content .modal-body .form-group .message-foot .edit-tool {
+      margin: .5rem 0;}
+      .modal-dialog .modal-content .modal-body .form-group .message-foot .edit-tool .btn {
+        font-size: .8rem;
+        margin-right: .5rem;
+        padding: .125rem 1.25rem;
+        vertical-align: bottom;}
+      .modal-dialog .modal-content .modal-body .form-group .message-foot .edit-tool a {
+        color: #808080;}
+        .modal-dialog .modal-content .modal-body .form-group .message-foot .edit-tool a:hover {
+          color: #666666;
+          text-decoration: none;}
+  .modal-dialog .modal-content .modal-body .form-group .message-body {
+    font-size: .75rem;
+    letter-spacing: .5px;}
+  .modal-dialog .modal-content .modal-body .form-group textarea.form-control {
+    width: 100%;
+    min-height: 6.5em;
+    resize: none;
+    background-color: #f9f9f9;
+    font-size: .75rem;}
+    .modal-dialog .modal-content .modal-body .form-group textarea.form-control.autosize {
+      overflow: hidden;}
+  .modal-dialog .modal-content .modal-body .comments {
+    padding-top: .5rem;
+    border-top: 1px solid rgba(0,0,0,.125);}
+  .modal-dialog .modal-content .modal-footer {
+    background-color: #f7f7f7;
+    border-top: 0;
+    padding: .75rem;
+    justify-content: center;}
+    .modal-dialog .modal-content .modal-footer .btn {
+      font-size: 1.2rem;
+      padding: .5rem 4rem;}
+
+#confirmModal .confirmMark {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+/* ▲▲▲ モーダル関係 ▲▲▲ */

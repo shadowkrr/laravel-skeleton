@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'AI Site Watcher') }}</title>
+    <title>{{ config('app.name', 'サイト名') }}</title>
 
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
@@ -39,7 +39,7 @@
     <header id="header-nav" class="fixed-top navbar-border">
         <nav class="navbar navbar-expand navbar-white bg-white">
             <div class="container-fluid">
-                <h2 class="logo"><a class="navbar-brand color-dark" href="{{ url('/admin') }}"><img src="{{ asset('img/logo/logo.png') }}" alt="AI Site Watcher" /></a></h2>
+                <!-- <h2 class="logo"><a class="navbar-brand color-dark" href="{{ url('/admin') }}"><img src="{{ asset('img/logo/logo.png') }}" alt="サイト名" /></a></h2> -->
                 @if (!empty(Auth::user()->name))
                 <div class="collapse order-1 navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
@@ -49,9 +49,9 @@
                                 <span>{{ Auth::user()->name }}</span>
                             </a>
                             <div class="dropdown-menu user-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#urlRegistModal"><i class="fas fa-clipboard-list icon-default"></i>&nbsp;URL登録フォーム</a>
+                                <!-- <a class="dropdown-item" href="#" data-toggle="modal" data-target="#urlRegistModal"><i class="fas fa-clipboard-list icon-default"></i>&nbsp;URL登録フォーム</a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#csvImportModal"><i class="fas fa-sign-in-alt icon-default deg-90"></i>&nbsp;CSVインポート</a>
-                                <a class="dropdown-item" href="/admin/download"><i class="fas fa-sign-out-alt icon-default deg-90"></i>&nbsp;パトロール結果ダウンロード</a>
+                                <a class="dropdown-item" href="/admin/download"><i class="fas fa-sign-out-alt icon-default deg-90"></i>&nbsp;パトロール結果ダウンロード</a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt icon-default"></i>&nbsp;ログアウト</a>
                             </div>
